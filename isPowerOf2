@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main() {
+    int integer;
+    
+    scanf("%d", &integer);
+    for ( ; integer != 1; integer >>= 1 ) {
+        if ( integer % 2 != 0 ) {
+            printf("no\n");
+            return 0;
+        }
+    }
+    printf("yes\n");
+    return 0;
+}
+
+
+/*
+
+Условие задачи
+
+Считать с клавиатуры целое положительное число. Если число является целой степенью двойки, вывести "yes", иначе вывести "no".
+
+Пример ввода
+
+8
+
+Пример вывода
+
+yes
+
+*/
