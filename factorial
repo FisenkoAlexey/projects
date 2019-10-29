@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+int main() {
+    int number, factorial;
+    
+    scanf("%d", &number);
+    
+    if ( number < 0 || number > 13 ) {
+        printf("-1\n");
+    } else {
+        for ( factorial = 1; 1 < number; number-- ) {
+            factorial *= number;
+        }
+        printf("%d\n", factorial);
+    }
+    return 0;
+}
+
+
+/*
+
+Условие задачи
+
+Вычислить и вывести факториал считанного с клавиатуры целого числа.
+В случае неопределенности ответа вывести -1.
+Для решения пользоваться циклами.
+
+
+Пример ввода
+
+5
+
+Пример вывода
+
+120
+
+*/
